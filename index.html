@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>lesson_24</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<div class="page__container">
+				<div class="page__video-1">
+					<h2>Відео №1</h2>
+					<h3>Задача №1</h3>
+					<p>Першим в консоль виведеться "Коля", тому що в коді даний вираз викликається першим.</p>
+					<h3>Задача №2</h3>
+					<p>Так правильно визвати функцію можна будякому місці кода.</p>
+					<h3>Задача №3</h3>
+					<p>Невірно виведе помилку в консолі. Вивіт після обявлення перемінної.</p>
+					<h3>Задача №4</h3>
+					<p>Вивіт фенкції треба перемістити в межі блока, її присвоєння</p>
+				</div>
+				<div class="page__video-2">
+					<h2>Відео №2</h2>
+					<h3>Задача №1</h3>
+					<p>Виводить число 4 - силка на иасив.</p>
+					<h3>Задача №2</h3>
+					<p>let users = ["Ваня", "Иштван",];
+						users.push("Оля");
+						delete users[1];
+						users[1] = "Петя";
+						console.log(users.indexOf("Ваня"));
+						console.log(users.indexOf("Петя"));
+						console.log(users.indexOf("Оля"));
+						users.shift();
+						users.unshift("Ваня");
+						users.unshift("Маша", "Паша");
+						console.log(users);</p>
+					<h3>Задача №3</h3>
+					<p>let arr = ['Ваня', 'Иштван', 'Оля',];
+						let removed = arr.splice(1, 1);
+						console.log(removed);
+						console.log(arr);</p>
+					<h3>Задача №4</h3>
+					<p>let str = 'Ваня,Иштван,Оля';
+						let arr = str.split(',');
+						console.log(arr);</p>
+					<h3>Задача №5</h3>
+					<p>Для arrTwo буде помилка, тому що такого масиву не існує, а previousValue для масиву arr на початку
+						буде 9.</p>
+				</div>
+				<div class="page__video-3">
+					<h2>Відео №3</h2>
+					<h3>Задача №1</h3>
+					<div data-say-hi="yes">Привет!
+						<p>const elemData = document.querySelector(`[data-say-hi]`);
+							console.log(elemData);</p>
+					</div>
+					<h3>Задача №2</h3>
+					<!-- <ul>
+						<li>Корчи</li>
+						<li>Йончи</li>
+					</ul> -->
+					<p> const lessonList = document.querySelectorAll('li')[1];
+						console.log(lessonList);</p>
+					<h3>Задача №3</h3>
+					<div class="like"></div>
+					<div class="subscribe"></div>
+					<div class="like-subscribe"></div>
+					<p>const lessonList = document.querySelectorAll(`.like`);
+						console.log(lessonList);</p>
+					<h3>Задача №4</h3>
+					<ul>
+						<li>Пункт №1</li>
+						<li>Пункт №2</li>
+					</ul>
+					<p>При цій записі виводить в консоль помилку, але якщо записати таким чином
+						const list = document.querySelector('ul');
+						list.insertAdjacentHTML('beforeend','Текст'); console.log(list);
+						всановлює в кінець списку.
+					</p>
+				</div>
+				<div class="page__video-4">
+					<h2>Відео №4</h2>
+					<h3>Задача №1</h3>
+					<p>const windowWidth = window.innerWidth;
+						const mainElement = document.documentElement;
+						const mainElementWidth = mainElement.clientWidth;
+						console.log(windowWidth - mainElementWidth); відповіть 17</p>
+					<h3>Задача №2</h3>
+					<p>function setScrollToOptions() {
+						window.scrollTo({
+						top: 100,
+						left: 0,
+						smooth, instant,
+						либо auto; по умолчанию auto
+						behavior: "smooth"
+						});
+						}
+						setTimeout(setScrollToOptions, 1000);</p>
+					<h3>Задача №3</h3>
+					<p>const page = document.querySelector('.like');
+						const getItemCoords = page.getBoundingClientRect();
+						console.log(getItemCoords);</p>
+					<p>const video = document.querySelector('.page__video-3');
+						const getItemTopCoord = video.getBoundingClientRect().top;
+						console.log(getItemTopCoord);</p>
+					<p>const like = document.querySelector('.like-subscribe');
+						const getItemLeftCoord = like.getBoundingClientRect().left;
+						console.log(getItemLeftCoord);</p>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer"></footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
